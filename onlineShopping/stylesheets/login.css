@@ -1,0 +1,9 @@
+.div_form_container{
+    position: relative; 
+    text-align: center;
+}
+.form_login{
+    display: inline-block;
+    /* position: relative; 
+    text-align: center; */
+}
