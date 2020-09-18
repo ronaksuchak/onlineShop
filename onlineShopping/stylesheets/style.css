@@ -1,0 +1,35 @@
+#div_banner{
+    height: 500px;
+    position: relative; 
+    text-align: center;
+}
+#img_banner{
+    height: 500px;
+    width: 1200px;
+    
+}
+.container_feat_prods{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.item_prod_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.prod_img{
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    width: 100%;
+    height: auto;
+}
+.prod_lbl{
+    display: inline-grid;
+    position: absolute;
+
+}
+.item_prod{
+    display: inline-grid;
+    text-align: center;
+}
+.prod_name_lbl{
+    display: inline-grid;
+}
