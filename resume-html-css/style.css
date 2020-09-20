@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+main{
+    background-color: blanchedalmond;
+    width: 1200px;
+    max-width: auto;
+    position: relative;
+    left: 300px;
+    right: 300px;
+    display: inline-block;
+}
+#skills{
+    display: inline-block;
+    position: relative;
+}
+h1{
+    font-size: 1.9em;
+}
+h3{
+    font-size: 1.2em;
+}   
+h4{
+
+    font-size: 1.2em;
+}
