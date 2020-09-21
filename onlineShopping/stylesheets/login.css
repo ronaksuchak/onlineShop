@@ -1,9 +1,17 @@
 .div_form_container{
-    position: relative; 
-    text-align: center;
+    /* position: ;  */
+    /* text-align: center; */
 }
 .form_login{
     display: inline-block;
     /* position: relative; 
     text-align: center; */
 }
+label{
+    text-align: left;
+    background-color: darkturquoise;
+
+}
+/* body{
+    align-items: center;
+} */

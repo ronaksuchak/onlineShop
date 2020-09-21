@@ -5,8 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login to rk-store</title>
-    <link rel="stylesheet" href="./stylesheets/login.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
+<script>
+    var onLogin = function () {
+        var email = document.getElementById("email_login");
+        var password = document.getElementById("password_login");
+        var msg = document.getElementById("msg_login");
+        if (password.textContent.length < 8) {
+            msg.textContent = "Login Failed!!"
+        }
+
+    }
+</script>
 
 <body>
     <nav>
@@ -20,15 +31,18 @@
         </ul>
     </nav>
     <div class="div_form_container">
+        <p class="msg_login"></p>
         <form class=form_login>
             <label for="email">Email:</label><br />
             <input type="text" id="email_login" name="email"><br>
-            <label for="email">Password:</label><br />
+            <label for="email" id="password_login">Password:</label><br />
             <input type="password"><br />
-            <input type="submit" value="Submit">
-        </form>
+            <!-- <input type="submit" value="Submit" onclick="onLogin()"> -->
 
+        </form>
+        <button onclick="onLogin"> Login </button>
     </div>
+
 </body>
 
 </html>
