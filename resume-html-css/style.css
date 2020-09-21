@@ -1,18 +1,43 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
+    
+}
+head
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#head1
+{
+    display: flex;
+   margin-left: 17%;
+    
+}
+
+#addr
+{
+    padding-left: 36%;
+}
+#head address
+{
+    margin-top: 1.5%;
+    
+}
+.abc
+{
+    display: flex;
+    float: left;
+    padding-left: 17%;
 }
 main{
-    background-color: blanchedalmond;
-    width: 1200px;
-    max-width: auto;
+   
+    width: 600px;
     position: relative;
-    left: 300px;
-    right: 300px;
-    display: inline-block;
+   
 }
 #skills{
-    display: inline-block;
+   
     position: relative;
 }
 h1{
@@ -22,6 +47,11 @@ h3{
     font-size: 1.2em;
 }   
 h4{
-
+    color: darkslateblue;
     font-size: 1.2em;
+}
+
+h1 ,h2 ,h3{
+    color: rgb(38, 29, 98);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
