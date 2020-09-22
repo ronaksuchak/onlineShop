@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
 <script>
-    var onLogin = function () {
-        var email = document.getElementById("email_login");
-        var password = document.getElementById("password_login");
+    var validateForm = function () {
+        var email = document.getElementById("email_login").value;
+        console.log(email);
+        var password = document.getElementById("password_login").value;
+        console.log(email + " " + password);
         var msg = document.getElementById("msg_login");
-        if (password.textContent.length < 8) {
-            msg.textContent = "Login Failed!!"
+
+        if (password.length < 8) {
+            msg.innerHTML = "Login Failed!!";
+            return false;
+        } else {
+            return true;
         }
 
     }
@@ -32,15 +38,15 @@
     </nav>
     <div class="div_form_container">
         <p class="msg_login"></p>
-        <form class=form_login>
+        <form class=form_login action="../index.html" onsubmit="return validateForm()">
             <label for="email">Email:</label><br />
             <input type="text" id="email_login" name="email"><br>
-            <label for="email" id="password_login">Password:</label><br />
-            <input type="password"><br />
-            <!-- <input type="submit" value="Submit" onclick="onLogin()"> -->
+            <label for="email">Password:</label><br />
+            <input type="password" id="password_login"><br />
+            <input type="submit" value="Submit">
 
         </form>
-        <button onclick="onLogin"> Login </button>
+        <!-- <button onclick="onLogin"> Login </button> -->
     </div>
 
 </body>
