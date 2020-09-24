@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <script src="../scripts/UserData.js"></script>
 </head>
+
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            <li><a href="./catalog.html">View all Products</a></li>
+        </ul>
+    </nav>
+    <b>Hello</b>
+    <strong>Hello</strong>
+    <div class="div_form_container">
+        <p class="msg"></p>
+        <form class=form_register onsubmit="return setUserData()">
+            <!-- <form> -->
+            <label for="name">Name</label><br />
+            <input type="text" id="name"><br />
+
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email"><br>
+
+            <label for="password">Password:</label><br />
+            <input type="password" id="password"><br />
+
+            <label for="dob">Birthday:</label><br />
+            <input type="date" id="dob"><br />
+            <label for="gender_div">Gender:</label>
+            <div class="gender_div">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="male">Female</label>
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
 </body>
+
 </html>

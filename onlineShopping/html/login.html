@@ -26,25 +26,31 @@
 </script>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./cart.html">Cart</a></li>
-            <li><a href="./aboutus.html">About us</a></li>
-            <li><a href="./catalog.html">View all Products</a></li>
-        </ul>
-    </nav>
+    <div class="nav_div">
+        <nav>
+            <h2 class="logo_main">Online Store</h2>
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="#">Account</a>
+                <a href="./login.html">Login</a>
+                <a href="./cart.html">Cart</a>
+                <a href="./aboutus.html">About us</a>
+                <a href="./catalog.html">View all Products</a>
+            </div>
+        </nav>
+    </div>
     <div class="div_form_container">
         <p class="msg_login"></p>
         <form class=form_login action="../index.html" onsubmit="return validateForm()">
-            <label for="email">Email:</label><br />
-            <input type="text" id="email_login" name="email"><br>
-            <label for="email">Password:</label><br />
-            <input type="password" id="password_login"><br />
-            <input type="submit" value="Submit">
-
+            <div class="div_password">
+                <label for="email">Email:</label><br />
+                <input type="text" id="email_login" name="email"><br>
+            </div>
+            <div class="div_password">
+                <label for="password">Password:</label><br />
+                <input type="password" id="password_login"><br />
+                <input type="submit" value="Submit" class="submit_btn">
+            </div>
         </form>
         <!-- <button onclick="onLogin"> Login </button> -->
     </div>
