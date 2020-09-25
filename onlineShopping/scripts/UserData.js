@@ -34,12 +34,26 @@ function validateData(email, password) {
 
 function getUsersFromStorage() {
     var userDiv = document.getElementById("user-data");
-    var d = JSON.parse(localStorage.getItem("users"));
-    console.log(typeof (d));
-    console.log(d);
-    console.log(d.users);
-    console.log(typeof (d.users));
-    console.log(d.users.email);
+    var d = JSON.parse(localStorage.getItem("users")); // d.users[0].name 
 
-    // userDiv.innerHTML = ;
+    console.log("Array len = " + d.users.length);
+    var arr = d.users;
+    var i;
+    for (i = 0; i < arr.length; i++) {
+        userDiv.innerHTML += arr[i].name + " " + arr[i].email + " " + arr[i].password + " " + arr[i].dob + " " + arr[i].gender;
+
+    }
+
 }
+// {
+//     users:
+//     [
+//         {
+//             "name": "Ronak Suchak",
+//             "email": "ronaksuchak16@hotmail.com",
+//             "password": "1234567890",
+//             "dob": "2020-09-05",
+//             "gender": "male"
+//         }
+//     ]
+// }
