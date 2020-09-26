@@ -6,46 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <script src="../scripts/UserData.js"></script>
+    <link rel="stylesheet" href="../stylesheets/register.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./cart.html">Cart</a></li>
-            <li><a href="./aboutus.html">About us</a></li>
-            <li><a href="./catalog.html">View all Products</a></li>
-        </ul>
-    </nav>
-    <b>Hello</b>
-    <strong>Hello</strong>
+    <div class="nav_div">
+        <nav>
+            <h2 class="logo_main">Online Store</h2>
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="#">Account</a>
+                <a href="./login.html">Login</a>
+                <a href="./cart.html">Cart</a>
+                <a href="./aboutus.html">About us</a>
+                <a href="./catalog.html">View all Products</a>
+            </div>
+        </nav>
+    </div>
+
     <div class="div_form_container">
-        <p class="msg"></p>
+        <p class="msg" id="msg"></p>
         <form class=form_register onsubmit="return setUserData()">
-            <!-- <form> -->
-            <label for="name">Name</label><br />
-            <input type="text" id="name"><br />
-
-            <label for="email">Email:</label><br />
-            <input type="text" id="email" name="email"><br>
-
-            <label for="password">Password:</label><br />
-            <input type="password" id="password"><br />
-
-            <label for="dob">Birthday:</label><br />
-            <input type="date" id="dob"><br />
-            <label for="gender_div">Gender:</label>
-            <div class="gender_div">
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="male">Female</label>
+            <div class="input_form_div">
+                <label for="name">Name</label><br />
+                <input type="text" id="name"><br />
+            </div>
+            <div class="input_form_div">
+                <label for="email">Email:</label><br />
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div class="input_form_div">
+                <label for="password">Password:</label><br />
+                <input type="password" id="password"><br />
+            </div>
+            <div class="input_form_div">
+                <label for="dob">Birthday:</label><br />
+                <input type="date" id="dob"><br />
             </div>
 
-            <input type="submit" value="Submit">
 
+            <div class="input_form_div">
+                <label for="gender_div" class="gender_label ">Gender:</label><br />
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male" class="gender_label">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female" class="gender_label">Female</label><br />
+            </div>
+
+            <div class="input_form_div">
+                <label for="file_type">Select File</label><br />
+                <input type="file" name="input-file" id="input-file" value="choose file "><br />
+                <input type="submit" value="Submit" class="submit_btn">
+            </div>
         </form>
 </body>
 

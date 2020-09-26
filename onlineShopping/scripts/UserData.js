@@ -4,6 +4,7 @@ function setUserData() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var dob = document.getElementById("dob").value;
+    var msg = document.getElementById("msg");
     var gender = "";
 
     var radioButtons = document.getElementsByName("gender");
@@ -20,10 +21,10 @@ function setUserData() {
         localStorage.setItem("users", JSON.stringify(u));
         return true;
     } else {
+        console.log("in main false")
+        msg.innerHTML = "Follow All Rules";
         return false;
     }
-
-
 }
 
 function validateData(email, password) {

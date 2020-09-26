@@ -1,0 +1,38 @@
+nav {
+    background-color: #6272a4;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.logo_main{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 20px;
+    color:#f8f8f2;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282a36;
+}
+a{
+    color: #f8f8f2;
+    font-family: sans-serif;
+    text-decoration: solid;
+    padding: 7px;
+}
+a:visited{
+    color: #f8f8f2;
+    font-family: sans-serif;
+    text-decoration: solid;
+    font-style:normal;
+}
+
+.links{
+    display: inline-block;
+    margin-left: 60%;  
+    margin-bottom: 10px;
+    /* margin: 10px; */
+    
+}
