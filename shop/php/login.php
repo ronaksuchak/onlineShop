@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION['logedIn'])){
+        header('Location:../index.php');
+    }
+?>
 
 <link rel="stylesheet" href="../css/login.css">
 <?php
@@ -19,12 +24,16 @@
         <!-- <button onclick="onLogin"> Login </button> -->
     </div>
 
+<!-- Handling POST request -->
+
     <?php
      if(isset($_POST['email']) && isset($_POST['password'])){
         $email = $_POST['email'];
         $password =$_POST['password'];
         if($email === 'email@email.com' && $password === 'abc'){
+            session_start();
             header('Location:../index.php');
+            $_SESSION['email']=$email;
         }else{
             echo '<p style="color:#ff79c6;">'.$email.$password.'</p>';
         }
@@ -32,3 +41,5 @@
         echo '<p style="color:#ff79c6;"> All fieldes are required!! 😈 </p>';
     }
     ?>
+<!-- Handling session.. -->
+
