@@ -7,55 +7,27 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>User List</title>
+    <script src="../scripts/app.js"></script>
 </head>
 
 <body>
-    <div class="nav_div">
-        <nav>
-            <h2 class="logo_main">UserList.html</h2>
-            <div class="links">
-                <i class="fa fa-home" style="color: azure;" aria-hidden="true"></i>
-                <a href="../index.html">Home</a>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
-    <form class=form_register onsubmit="return setUserData()">
-        <div class="input_form_div">
-            <label for="name">Name</label><br />
-            <input type="text" id="name" class="textInput"><br />
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="../index.html"> <i class="fa fa-home" style="color: azure;"
+                            aria-hidden="true"></i> Home
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="input_form_div">
-            <label for="email">Email:</label><br />
-            <input type="text" id="email" name="email" class="textInput"><br>
-        </div>
-        <div class="input_form_div">
-            <label for="password">Password:</label><br />
-            <input type="password" id="password" class="textInput"><br />
-        </div>
-        <div class="input_form_div">
-            <label for="dob">Birthday:</label><br />
-            <input type="date" id="dob" class="dateInput"><br />
-        </div>
+    </nav>
 
-
-        <div class="input_form_div">
-            <label for="gender_div" class="gender_label ">Gender:</label><br />
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male" class="gender_label">Male</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female" class="gender_label">Female</label><br />
-        </div>
-
-        <div class="input_form_div">
-            <label for="file_type">Select File</label><br />
-            <input type="file" name="input-file" id="input-file" value="choose file "><br />
-            <input type="submit" value="Submit" class="submit_btn">
-        </div>
-    </form>
-
+    <button onclick="drawTable()"> get dta</button>
+    <div id="table-container"></div>
 </body>
 
 </html>
